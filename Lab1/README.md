@@ -7,3 +7,6 @@
 ##### Please make sure you are in the project root
 ##### Run ```npm install ``` to download all dependencies
 ##### Run ```npm start ``` to start the program.
+
+## Lab requirement
+<a href="https://github.com/Kyrie-Ma/4663-Cryptography-Ma/blob/master/Assignments/A05/break_vig.py" >
