@@ -1,6 +1,6 @@
 ## Yuankai Ma
 #### Repo: CS546-Project
-#### Email: 1106935335@qq.com
+#### Email: 1106935335@qq.com / Durexble@gmail.com
 
 ## How to Setup
 - Please make sure you are in the project root
