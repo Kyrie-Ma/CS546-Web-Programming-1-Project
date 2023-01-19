@@ -9,4 +9,4 @@
 ##### Run ```npm start ``` to start the program.
 
 ## Lab requirement
-<a href="https://github.com/Kyrie-Ma/4663-Cryptography-Ma/blob/master/Assignments/A05/break_vig.py" >
+<a href="https://github.com/Kyrie-Ma/CS546-project/blob/main/Lab1/Lab%201.pdf" >  Lab1 requirement
