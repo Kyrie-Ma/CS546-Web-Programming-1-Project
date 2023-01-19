@@ -8,4 +8,4 @@
 - Run ```npm start``` to start the program.
 
 ## Lab requirement
-<a href="https://github.com/Kyrie-Ma/CS546-project/blob/main/lab2/Lab%202.pdf" >  Lab2 requirement
+<a href="https://github.com/Kyrie-Ma/CS546-project/blob/main/Lab2/Lab%202.pdf" >  Lab2 requirement
