@@ -20,41 +20,6 @@
             </form>
             <ul id="attempts"></ul>
             <div id="error" class="error"></div>
-            <div>
-                <label for="post" id="commentBox" class="commentBox">
-                    <input type="text" name="comment_input" id="comment_input">
-                </label>
-                <button id="submitComment" type="submit">Comment</button>
-            </div>
-            <div id="addCommentDiv">
-                <ul id="comment">
-                    <li>
-                        asd
-                        <ul id="commentChild">
-                            <li>ccc</li>
-                            <li>ccc</li>
-                        </ul>
-                    </li>
-                    <li>
-                        2
-                    </li>
-                </ul>
-            </div>
-            <button onclick="addCode()">Add Comment</button>
-            <script>
-                function addCode() {
-                    document.getElementById("addCommentDiv").innerHTML += 
-                      "<ul>This is the text which has been inserted by JS</ul>";
-                }
-            </script>
-            <div class="container">
-                <div class="comments">
-                    <h3>Nested Comments</h3>
-                    <comment-box level="0"></comment-box>
-                </div>
-            </div>
-
-
             <footer>
                 <p>Author: Yuankai Ma</p>
                 <p>CWID: 10479338</p>

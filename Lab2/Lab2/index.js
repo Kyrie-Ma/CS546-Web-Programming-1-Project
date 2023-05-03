@@ -174,7 +174,7 @@ try {
 console.log('mashUp test: ');
 try {
    // Should Pass
-   const mashUpOne = stringUtils.mashUp("abc", "cde");
+   const mashUpOne = stringUtils.mashUp("Patrick", "Hill");
    console.log(mashUpOne);
    console.log('mashUp passed successfully');
  } catch (e) {
@@ -199,7 +199,7 @@ try {
    const second = { a: 70, x: 4, z: 5 };
    const third = { x: 0, y: 9, q: 10 };
    const objects = [first, second]
-   const makeArrayOne = objUtils.makeArray({ x: 2, y: 3 }, { x: 2, y: 3 });
+   const makeArrayOne = objUtils.makeArray(objects);
    console.log(makeArrayOne);
    console.log('makeArray passed successfully');
  } catch (e) {
@@ -224,8 +224,8 @@ try {
 console.log('isDeepEqual test: ');
 try {
    // Should Pass
-   const first = {};
-   const second = {};
+   const first = {a: 2, b: 3};
+   const second = {a: 2, b: 4};
    const third = {a: 2, b: 3};
    const forth = {a: {sA: "Hello", sB: "There", sC: "Class"}, b: 7, c: true, d: "Test"}
    const fifth  = {c: true, b: 7, d: "Test", a: {sB: "There", sC: "Class", sA: "Hello"}}
