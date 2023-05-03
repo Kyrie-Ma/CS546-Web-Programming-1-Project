@@ -1,0 +1,25 @@
+<main>
+    <article>
+        <h1>{{data.name}}</h1>
+        <img src="{{data.image.medium}}" alt="{{data.name}}">
+        <dl>
+            <dt class="details">Language</dt>
+            <dd>{{data.language}}</dd>
+            <dt class="details">Genres</dt>
+            <dd>
+                <ul>
+                    {{#each data.genres}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </dd>
+            <dt class="details">Average Rating</dt>
+            <dd>{{data.rating.average}}</dd>
+            <dt class="details">Network</dt>
+            <dd>{{data.network.name}}</dd>
+            <dt class="details">Summary</dt>
+            <dd>{{data.summary}}</dd>
+        </dl>
+    </article>
+    <a href="/">Make Another Search</a>
+</main>

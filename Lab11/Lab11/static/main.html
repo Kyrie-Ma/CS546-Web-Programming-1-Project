@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Finder</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/public/main_style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Show Finder</h1>
+    </header>
+    <main>
+        <form action="/" id="searchForm">
+            <label for="search_term">Search show: </label>
+            <input type="text" id="search_term">
+            <button type="submit">submit</button>
+            <p id="error" hidden>Please enter valid input!</p>
+        </form>
+        <ul id="showList" hidden></ul>
+        <div id="show" hidden></div>
+        <a href="/" id="homeLink" hidden>Back to All Shows</a>
+    </main>
+
+    <footer>Yuankai Ma 10479338</footer>
+    <script src="../public/ajax.js"></script>
+</body>
+</html>

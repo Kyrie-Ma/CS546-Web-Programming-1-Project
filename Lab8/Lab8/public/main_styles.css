@@ -1,0 +1,52 @@
+h1 {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 30pt;
+}
+
+h2 {
+    color: blue;
+    font-weight: bold;
+}
+
+p {
+    color:green
+}
+
+.details {
+    color: darkorange;
+}
+
+a {
+	color: rgb(69, 216, 155);
+	text-decoration: none;
+	font-size: 16pt;
+}
+
+a:hover {
+	color: rgb(0, 255, 255);
+	text-decoration: underline;
+}
+
+a:visited {
+	color: purple;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.error-not-found {
+    color: red;
+    font-weight: bold;
+}
+
+.show-not-found {
+    color: red;
+    font-weight: bold;
+}
+
+button {
+    color: rgb(255, 0, 242);
+}

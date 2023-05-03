@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Finder</title>
+    <link rel="stylesheet" href="/public/main_styles.css">
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Show Finder</h1>
+            <p>This is a website that can search movie. It have 3 pages, main about page, search shows page, and show detail page. The about page have the search form. The search shows page will show up to five match results. The show detail page will show the detail of the choosen show.</p>
+            <form action="/searchshows" method="post" class ="new-search-form">
+                <label for="ShowFinder">
+                    Please enter a search keyword for the show you want to find: 
+                    <input type="text" name="showSearchTerm" id="ShowFinder">
+                </label>
+                <button id="submit" type="submit">Search</button>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

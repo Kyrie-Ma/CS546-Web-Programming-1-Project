@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(119, 158, 147);
+}
+.showList{
+    color: white;
+}
+.show{
+    color: white;
+}
+dl{
+    font-weight: bold;
+    font-size: 12pt;
+    color: white;
+}
+dt{
+    font-weight: bold;
+    font-size: 12pt;
+    color: white;
+}
+dd{
+    font-weight: bold;
+    font-size: 12pt;
+    color: white;
+}
+.homeLink{
+    color: white;
+}
+footer{
+    color: white;
+    text-align: center;
+    font-size: 16pt;
+}
+h1{
+    color: white;
+}
+label{
+    font-weight: bold;
+    font-size: 16pt;
+    color: white;
+}
+button{
+    font-weight: bold;
+    padding: 2px 24px;
+    font-weight: bold;
+    background-color:  rgb(119, 158, 147);
+    color: white;
+    font-size: 14px
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Whole Prime Number Checker</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+</head>
+<body>
+    <main>
+        <article>
+            <h1>The Whole Prime Number Checker</h1>
+            <p>This is a page that can check if the input number is prime number or not!</p>
+            <form method="post" id="checkForm" class="checkForm">
+                <label for="formlable" id="formlable">
+                    <input type="number" id="text_input" name="text_input">
+                </label>
+                <button id="submit" type="submit">Check</button>
+            </form>
+            <ul id="attempts"></ul>
+            <div id="error" class="error"></div>
+            <div>
+                <label for="post" id="commentBox" class="commentBox">
+                    <input type="text" name="comment_input" id="comment_input">
+                </label>
+                <button id="submitComment" type="submit">Comment</button>
+            </div>
+            <div id="addCommentDiv">
+                <ul id="comment">
+                    <li>
+                        asd
+                        <ul id="commentChild">
+                            <li>ccc</li>
+                            <li>ccc</li>
+                        </ul>
+                    </li>
+                    <li>
+                        2
+                    </li>
+                </ul>
+            </div>
+            <button onclick="addCode()">Add Comment</button>
+            <script>
+                function addCode() {
+                    document.getElementById("addCommentDiv").innerHTML += 
+                      "<ul>This is the text which has been inserted by JS</ul>";
+                }
+            </script>
+            <div class="container">
+                <div class="comments">
+                    <h3>Nested Comments</h3>
+                    <comment-box level="0"></comment-box>
+                </div>
+            </div>
+
+
+            <footer>
+                <p>Author: Yuankai Ma</p>
+                <p>CWID: 10479338</p>
+            </footer>
+        </article>
+    </main>
+    <script src='/public/js/form.js'></script>
+</body>
+</html>
