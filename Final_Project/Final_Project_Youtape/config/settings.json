@@ -1,0 +1,11 @@
+{
+    "mongoConfig": {
+        "serverUrl": "mongodb://localhost:27017",
+        "database": "CS546_A_GROUP_13"
+    },
+    "imdb": {
+        "apiKey_Alternative": "k_l31gvkes",
+        "apiKey": "k_o8ajco4w",
+        "apiKey_Jerry": "k_sn8ectwp"
+    }
+}

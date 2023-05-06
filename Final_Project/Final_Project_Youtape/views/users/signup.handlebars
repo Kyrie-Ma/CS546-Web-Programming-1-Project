@@ -1,0 +1,57 @@
+<section class="ftco-section coolbackground">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-7">
+                <div class="wrap d-md-flex">
+                    <div class="login-wrap p-5">
+                        <div class="d-flex">
+                            <div class="w-100" style="text-align: center">
+                                <h1 class="mb-4">Sign Up</h1>
+                            </div>
+                        </div>
+                        {{!-- <form action="/signup" method = "post" class="signin-form" id="signup-form"> --}}
+                        <form class="signin-form" id="signUpForm">
+                            <div class="form-group mb-3">
+                                <label class="label" for="account">Username</label>
+                                <input type="text" class="form-control" placeholder="Username" name="account"
+                                       id="account"
+                                       required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="label" for="password">Password</label>
+                                <input type="password" class="form-control" placeholder="password" name="password"
+                                       id="password"
+                                       required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="label" for="confirm">Confirm password</label>
+                                <input type="password" class="form-control" placeholder="confirm password" name="confirm"
+                                       id="confirm"
+                                       required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="label" for="firstname">Firstname</label>
+                                <input type="text" class="form-control" placeholder="firstname" name="firstname"
+                                       id="firstname"
+                                       required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="label" for="lastname">LastName</label>
+                                <input type="text" class="form-control" placeholder="lastname" name="lastname"
+                                       id="lastname"
+                                       required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign
+                                    Up
+                                </button>
+                            </div>
+                        </form>
+                        <p class="text-center mb-0 text-black">Already a member? <a class="text-success" href="/login">Sign In</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

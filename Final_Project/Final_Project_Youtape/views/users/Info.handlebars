@@ -1,0 +1,145 @@
+<div class="container rounded bg-white mt-5 mb-5">
+    <form id="userSearch">
+        <div class="py-3 row">
+            <label for="account"></label><input class="form-control col mx-3" type="text" placeholder="Account"
+                                                name="account" id="account">
+            <div class="mx-2 col">
+                <button class="btn btn-secondary mx-1" type="submit">Search</button>
+                <button class="btn btn-warning mx-1" type="button" data-bs-toggle="modal" data-bs-target="#addForm">Add
+                    User
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <table class="table align-middle mb-0 bg-white">
+        <thead>
+        <tr>
+            <th>Account</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Is Admin</th>
+        </tr>
+        </thead>
+        <tbody id="userTable">
+        </tbody>
+    </table>
+</div>
+<form class="modal fade" id="updateForm" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Edit Name for <span class="text-success fw-bold" id="updateAccount"></span></h1>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="updateFirstName">First name</label>
+                    <input class="form-control" type="text" placeholder="new first name" id="updateFirstName">
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="updateLastName">Last name</label>
+                    <input class="form-control" type="text" placeholder="new last name" id="updateLastName">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Confirm</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<form class="modal fade" id="addForm" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Add User</h1>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="addAccount">Account</label>
+                    <input class="form-control" type="text" placeholder="Account" id="addAccount">
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="addFirstName">First name</label>
+                    <input class="form-control" type="text" placeholder="First name" id="addFirstName">
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="addLastName">Last name</label>
+                    <input class="form-control" type="text" placeholder="Last name" id="addLastName">
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="addPassword">Password</label>
+                    <input class="form-control" type="password" placeholder="Password" id="addPassword">
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="addConfirmPw">Confirm password</label>
+                    <input class="form-control" type="password" placeholder="Confirm password" id="addConfirmPw">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Confirm</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<form class="modal fade" id="removeForm" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title text-danger">Are you sure to remove <span class="fw-bold" id="removeAccount"></span> ?</h1>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-danger">Confirm</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<form class="modal fade" id="passwordForm" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Change Password for <span class="text-success fw-bold" id="passwordAccount"></span></h1>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="newPassword">New password</label>
+                    <input class="form-control" type="password" placeholder="New password" id="newPassword">
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="confirmPw">Confirm password</label>
+                    <input class="form-control" type="password" placeholder="Confirm new password" id="confirmPw">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Confirm</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<form class="modal fade" id="adminForm" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Set <span class="text-warning fw-bold" id="adminAccount"></span> as Administrator?</h1>
+            </div>
+            <div class="modal-body">
+                <select id="adminStatus" class="form-select">
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-danger">Confirm</button>
+            </div>
+        </div>
+    </div>
+</form>
